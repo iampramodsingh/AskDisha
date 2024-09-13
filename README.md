@@ -35,10 +35,10 @@ Working text and voice input.
 Fully responsive UI.
 
 ##  Project Setup Instructions:  
-  Clone the repository:  https://github.com/iampramodsingh/AskDisha  
-  Navigate to the project directory
-  Install dependencies: npm install (node 18 environment is required)  
-  Start the development server: ng serve
-  Open the application in your browser:  http://localhost:4200
-  Click on AskDisha gif image on bottom right
-  After clicking the image one dialog will open
+  Clone the repository:  https://github.com/iampramodsingh/AskDisha .
+  Navigate to the project directory .
+  Install dependencies: npm install (node 18 environment is required) .
+  Start the development server: ng serve .
+  Open the application in your browser:  http://localhost:4200 .
+  Click on AskDisha gif image on bottom right .
+  After clicking the image one dialog will open .
