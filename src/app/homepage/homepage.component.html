@@ -1,0 +1,303 @@
+<div class="container-box">
+    <div class="gOJRFr">
+        <div class="header">
+            <div class="first-column">
+                <div class="buttons">
+                    <img src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/menu.png" class="btn-menu" alt="Open Menu Button" >
+                    <img src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/home.png" class="btn-reset" alt="Go To Home Button" >
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/corover/assets@18June/askdisha-bucket/disha.svg" class="disha-logo" alt="Ask Disha Avatar" >
+                </div>
+                <div class="header-text">
+                    <p>Ask</p>
+                    <h3>DISHA</h3>
+                    <span>2.O</span>
+                </div>
+    
+            </div>
+            <div class="second-column">
+                <div class="logo-container">
+                    <img src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/irctc.png" alt="IRCTC Logo">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <mat-dialog-content class="mat-typography">
+        <div class="greetParent">
+            <h2 class="greet" [innerText]="greetings()"></h2>
+            <h4 class="askMsg">How may I help you today? {{service.text}}</h4>
+        </div>
+
+        <mat-card class="card-1">
+       
+            <div class="station">
+                <mat-form-field class="form-field" appearance="fill">
+                    <mat-label>From</mat-label>
+                    <img class="train" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/station-icon.png" alt="">
+                    <input matInput [matAutocomplete]="autoFrom"  (click)="focus()" autocomplete="off"  type="text" placeholder="Boarding Station" [(ngModel)]="bookingData.from" (ngModelChange)="filterStations($event)" #bookingData.from= "ngModel">
+                    <button  matSuffix id="speech" class="btn m-left type2">
+                        <img class="mic-btn mic-bttn"   (click)="filterStations('');OpenRecord(); micId.push('from')" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/mic-refactored.png" alt="">
+                        <div [ngClass]="{'pulse-ring': micId.includes('from') && isMicOn}" ></div>
+                      </button>
+                    
+                    @if (bookingData.from) {
+                      <button matSuffix mat-icon-button aria-label="Clear" (click)="clear('from')">
+                        <mat-icon>close</mat-icon>
+                      </button>
+                    }
+                    <mat-autocomplete #autoFrom="matAutocomplete">
+                        @for (station of filteredStation; track station) {
+                          <mat-option [value]="station.stationName">
+                            <img alt="" class="m-r-10px" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/station-icon.png" height="25">
+                            <div class="optionWrapper">
+                                <span class="stationName">{{station.stationName}}</span>
+                                <span class="stationCode">{{station.stationCode}}</span>
+
+                            </div>
+                          </mat-option>
+                        }
+                      </mat-autocomplete>
+                  </mat-form-field>
+                  <mat-form-field class="form-field" appearance="fill">
+                    <mat-label>To</mat-label>
+                    <img class="train" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/station-icon.png" alt="">
+                    <input matInput [matAutocomplete]="autoTo" (click)="focus()"  type="text" [(ngModel)]="bookingData.to" (ngModelChange)="filterStations($event)" placeholder="Destination Station" #bookingData.to= "ngModel">
+                    <button  matSuffix id="speech" class="btn m-left type2">
+                        <img class="mic-btn mic-bttn"   (click)="filterStations('');OpenRecord(); micId.push('to')" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/mic-refactored.png" alt="">
+                        <div [ngClass]="{'pulse-ring': micId.includes('to') && isMicOn}" ></div>
+                      </button>
+                    @if (bookingData.to) {
+                      <button matSuffix mat-icon-button aria-label="Clear" (click)="clear('to')">
+                        <mat-icon>close</mat-icon>
+                      </button>
+                    }
+                    <mat-autocomplete #autoTo="matAutocomplete">
+                        @for (station of filteredStation; track station) {
+                          <mat-option [value]="station.stationName">
+                            <img alt="" class="m-r-10px" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/station-icon.png" height="25">
+                            <div class="optionWrapper">
+                                <span class="stationName">{{station.stationName}}</span>
+                                <span class="stationCode">{{station.stationCode}}</span>
+
+                            </div>
+                          </mat-option>
+                        }
+                      </mat-autocomplete>
+                  </mat-form-field>
+                  @if(bookingData.from && bookingData.to) {
+                    <div class="swap" (click)="swap(bookingData.from, bookingData.to)">
+                        <img width="80%"  src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/arrows-refactored.png" alt="">
+  
+                    </div>
+                  }
+                
+            </div>
+            <div class="more-details">
+                    <mat-form-field class="example-form-field">
+                        <mat-label>Journey Date</mat-label>
+                        <input matInput [matDatepicker]="datepicker" [(ngModel)]="bookingData.journeyDate">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matIconPrefix [for]="datepicker"></mat-datepicker-toggle>
+                        <mat-datepicker #datepicker>
+                          <mat-datepicker-actions>
+                            <button mat-button matDatepickerCancel>Cancel</button>
+                            <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                          </mat-datepicker-actions>
+                        </mat-datepicker>
+                      </mat-form-field>
+               
+                    <mat-form-field class="quota">
+                        <mat-label>Journey Quota</mat-label>
+                        <mat-select [(ngModel)]="bookingData.journeyQuota">
+                          @for (q of Quota; track q) {
+                            <mat-option [value]="q.quotaNameWithCode">
+                                <div class="quotaIcon" [ngStyle]="{'background-color': q.color}">
+                                    <img width="80%" [src]="q.img" alt="">
+
+                                </div>
+                                {{q.quotaNameWithCode}}
+                            </mat-option>
+                          }
+                        </mat-select>
+                      </mat-form-field>
+            
+            </div>
+            <div class="button">
+                <button  mat-flat-button color="primary" (click)="bookTicket(this.bookingData)">Book Ticket</button>
+            </div>
+          </mat-card>
+
+          <div class="services">
+
+            <mat-accordion>
+                <mat-expansion-panel >
+                <mat-expansion-panel-header>        
+                <mat-panel-title>
+                    <div class="heading">
+                        <span class="ticket">
+                            <img width="94%" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/ticket-3d.svg" alt="">
+                        </span>
+                        My Upcoming Bookings
+                    </div>
+                </mat-panel-title>
+             
+                </mat-expansion-panel-header>
+                <p class="desc">Please verify your phone number to see your upcoming bookings</p>
+                <div class="button">
+                    <button  mat-flat-button color="primary">Verify Mobile Number</button>
+                </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="service-expansion" [expanded]="true">
+                    <mat-expansion-panel-header>        
+                    <mat-panel-title>
+                        <div class="heading">
+                            <span class="ticket">
+                                <img width="94%" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/looking.svg" alt="">
+                            </span>
+                            Looking for something else?
+                        </div>
+                    </mat-panel-title>
+                 
+                    </mat-expansion-panel-header>
+                        <div class="icon-container">
+                            @for (service of services; track service) {
+                                <div class="icon-white" [ngStyle]="{'background-color': service.color}">
+                                    <img [ngStyle]="{'width': service.width+'px'}" [src]="service.img" alt="">
+                                    <p>{{service.desc}}</p>
+                                </div>
+
+                            }
+                        </div>
+                    </mat-expansion-panel>
+
+                    <a class="adver" href="https://bit.ly/3PYbd22" target="_blank">
+                        <div class="advertise-wrap">
+                            <div class="first-columns">
+                                <img src="	https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/advertising.svg" alt="">
+                                <div>
+                                    <p class="first_para">Advertise on Ask DISHA</p>
+                                    <p class="second_para">Show your brand to millions</p>
+                                </div>
+                            </div>
+                            <mat-icon class="link_arrow">keyboard_arrow_right</mat-icon>
+                        </div>
+
+                    </a>
+
+                    <mat-expansion-panel  class="QA">
+                        <mat-expansion-panel-header>        
+                        <mat-panel-title>
+                            <div class="heading">
+                                How to book train ticket on AskDISHA?
+                                <small class="color-grey">Easy, Fast and Secure!</small>
+                            </div>
+                        </mat-panel-title>
+                     
+                        </mat-expansion-panel-header>
+                            <div class="line-wrap">
+                                <div class="img-wrap">
+                                    <img width="94%" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/search.svg" alt="">
+                                </div>
+                                <p>Search trains</p>
+                            </div>
+
+                            <div class="line-wrap">
+                                <div class="img-wrap">
+                                    <img width="94%" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/list.svg" alt="">
+                                </div>
+                                <p>Select the best train</p>
+                            </div>
+
+                            <div class="line-wrap">
+                                <div class="img-wrap">
+                                    <img width="94%" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/password.svg" alt="">
+                                </div>
+                                <p>Enter IRCTC OTP</p>
+                            </div>
+
+                            <div class="line-wrap">
+                                <div class="img-wrap">
+                                    <img width="94%" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/success.svg" alt="">
+                                </div>
+                                <p>Ticket is Booked</p>
+                            </div>
+                            <br>
+
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/gQcqoZvIieg?si=LZR1Wx7ppILKi2ub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </mat-expansion-panel>
+
+
+                        <mat-expansion-panel class="about">
+                            <mat-expansion-panel-header>        
+                            <mat-panel-title>
+                                <div class="heading">
+                                    <span class="ticket">
+                                        <img width="94%" src="https://www.svgrepo.com/show/452112/tag.svg" alt="">
+                                    </span>
+                                    About AskDISHA
+                                </div>
+                            </mat-panel-title>
+                         
+                            </mat-expansion-panel-header>
+                            <p>
+                                AskDISHA 2.0 (Digital Interaction To Seek Help Anytime) is an Artificial Intelligence (AI), Machine learning (ML) and NLP based Virtual Assistant (ChatBot, VoiceBot) that helps users perform various transactions like end to end train ticket booking including payment, canceling train tickets, change boarding station, check refund status, check PNR status, get offers and answer queries pertaining to various services offered by IRCTC, and more.
+                            </p>
+                           
+                            <p>
+                                It is the first time that train e-ticket booking is being made possible in a conversational way, without using/knowing the IRCTC password and with just an OTP. It will be the fastest and the easiest way to book a train ticket and also to get your boarding pass/train ticket.
+                            </p>
+
+                            <p>
+                                AskDISHA is a voice-commerce enabled e-ticketing Virtual Assistant of Indian Railways/IRCTC which is multi-lingual, multi-format (click, text, voice), multi-channel (web, app). AskDISHA is created using Gen AI powered Conversational AI platform, CoRover.ai.
+                            </p>
+
+                            <h3>AskDISHA 2.0 USPs</h3>
+
+                            <ul>
+                                <li>Guided ticket booking experience</li>
+                                <li>Booking by voice (in English, Hindi, Hinglish, Gujarati and more)</li>
+                                <li>OTP based ticket booking: without knowing the IRCTC password</li>
+                                <li>Fastened Refunds</li>
+                                <li>Save Passenger List</li>
+                                <li>Retry Failed Transaction in 15 min</li>
+                            </ul>
+
+                            <h3>Key Features</h3>
+
+                            <ul>
+                                <li>Book Train Ticket</li>
+                                <li>Check PNR Status</li>
+                                <li>Cancel Ticket</li>
+                                <li>Get Refund Status</li>
+                                <li>Change Boarding Station</li>
+                                <li>Check Booking History</li>
+                                <li>View E-Ticket</li>
+                                <li>Dowload ERS</li>
+                                <li>Print & Share E-Ticket</li>
+                            </ul>
+                            </mat-expansion-panel>
+
+                       
+            </mat-accordion>
+
+        
+          </div>
+
+
+
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <div class="chat">
+        <div class="chatImg">
+            <img  width="100%" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/language-refactored.png" alt="">
+        </div>
+        <input type="text" placeholder="Type here...">
+        <img class="mic-btn" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/mic-refactored.png" alt="">
+        <img class="send-btn" src="https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/send-refactored.png" alt="">
+      </div>
+      </mat-dialog-actions>
+</div>

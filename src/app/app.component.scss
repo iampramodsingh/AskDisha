@@ -1,0 +1,50 @@
+.minimize {
+  position: absolute;
+  right: 98px;
+  width: 16px;
+  top: -2px;
+}
+.logo {
+  width: 100%;
+}
+
+.container-box {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 120px;
+  height: 120px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 50px 0px;
+  backface-visibility: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 9;
+  border-radius: 50%;
+  right: 0px;
+  bottom: 0px;
+  position: relative;
+  transform: none;
+  min-width: 120px;
+}
+
+
+
+.parent {
+    position: fixed;
+    // z-index: 999999999;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 54px;
+    right: 20px;
+    width: fit-content;
+    max-width: 95%;
+}
+
+
+.custom-dialog-class {
+    z-index: 2147483647;
+    
+}

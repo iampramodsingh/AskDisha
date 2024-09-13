@@ -1,0 +1,339 @@
+[
+    {
+      "stationName": "Secunderabad Junction",
+      "stationCode": "SC"
+    },
+    {
+      "stationName": "Mumbai Central",
+      "stationCode": "BCT"
+    },
+    {
+      "stationName": "New Delhi",
+      "stationCode": "NDLS"
+    },
+    {
+      "stationName": "Howrah Junction",
+      "stationCode": "HWH"
+    },
+    {
+      "stationName": "Chennai Central",
+      "stationCode": "MAS"
+    },
+    {
+      "stationName": "Kolkata Sealdah",
+      "stationCode": "SDAH"
+    },
+    {
+      "stationName": "Bangalore City Junction",
+      "stationCode": "SBC"
+    },
+    {
+      "stationName": "Hyderabad Deccan",
+      "stationCode": "HYB"
+    },
+    {
+      "stationName": "Ahmedabad Junction",
+      "stationCode": "ADI"
+    },
+    {
+      "stationName": "Pune Junction",
+      "stationCode": "PUNE"
+    },
+    {
+      "stationName": "Patna Junction",
+      "stationCode": "PNBE"
+    },
+    {
+      "stationName": "Lucknow Charbagh NR",
+      "stationCode": "LKO"
+    },
+    {
+      "stationName": "Gorakhpur Junction",
+      "stationCode": "GKP"
+    },
+    {
+      "stationName": "Vijayawada Junction",
+      "stationCode": "BZA"
+    },
+    {
+      "stationName": "Bhopal Junction",
+      "stationCode": "BPL"
+    },
+    {
+      "stationName": "Jaipur Junction",
+      "stationCode": "JP"
+    },
+    {
+      "stationName": "Kanpur Central",
+      "stationCode": "CNB"
+    },
+    {
+      "stationName": "Varanasi Junction",
+      "stationCode": "BSB"
+    },
+    {
+      "stationName": "Nagpur Junction",
+      "stationCode": "NGP"
+    },
+    {
+      "stationName": "Ernakulam Junction",
+      "stationCode": "ERS"
+    },
+    {
+      "stationName": "Thiruvananthapuram Central",
+      "stationCode": "TVC"
+    },
+    {
+      "stationName": "Mangalore Central",
+      "stationCode": "MAQ"
+    },
+    {
+      "stationName": "Madurai Junction",
+      "stationCode": "MDU"
+    },
+    {
+      "stationName": "Coimbatore Junction",
+      "stationCode": "CBE"
+    },
+    {
+      "stationName": "Visakhapatnam Junction",
+      "stationCode": "VSKP"
+    },
+    {
+      "stationName": "Jabalpur Junction",
+      "stationCode": "JBP"
+    },
+    {
+      "stationName": "Tiruchirappalli Junction",
+      "stationCode": "TPJ"
+    },
+    {
+      "stationName": "Allahabad Junction",
+      "stationCode": "ALD"
+    },
+    {
+      "stationName": "Amritsar Junction",
+      "stationCode": "ASR"
+    },
+    {
+      "stationName": "Guwahati Junction",
+      "stationCode": "GHY"
+    },
+    {
+      "stationName": "Kharagpur Junction",
+      "stationCode": "KGP"
+    },
+    {
+      "stationName": "Rajkot Junction",
+      "stationCode": "RJT"
+    },
+    {
+      "stationName": "Surat Junction",
+      "stationCode": "ST"
+    },
+    {
+      "stationName": "Tatanagar Junction",
+      "stationCode": "TATA"
+    },
+    {
+      "stationName": "Jodhpur Junction",
+      "stationCode": "JU"
+    },
+    {
+      "stationName": "Udaipur City",
+      "stationCode": "UDZ"
+    },
+    {
+      "stationName": "Agra Cantt",
+      "stationCode": "AGC"
+    },
+    {
+      "stationName": "Gaya Junction",
+      "stationCode": "GAYA"
+    },
+    {
+      "stationName": "Dhanbad Junction",
+      "stationCode": "DHN"
+    },
+    {
+      "stationName": "Indore Junction",
+      "stationCode": "INDB"
+    },
+    {
+      "stationName": "Ranchi Junction",
+      "stationCode": "RNC"
+    },
+    {
+      "stationName": "Bhubaneswar Junction",
+      "stationCode": "BBS"
+    },
+    {
+      "stationName": "Puri Junction",
+      "stationCode": "PURI"
+    },
+    {
+      "stationName": "Jammu Tawi",
+      "stationCode": "JAT"
+    },
+    {
+      "stationName": "Haridwar Junction",
+      "stationCode": "HW"
+    },
+    {
+      "stationName": "Dehradun",
+      "stationCode": "DDN"
+    },
+    {
+      "stationName": "Shimla",
+      "stationCode": "SML"
+    },
+    {
+      "stationName": "Meerut City",
+      "stationCode": "MTC"
+    },
+    {
+      "stationName": "Ambala Cantt Junction",
+      "stationCode": "UMB"
+    },
+    {
+      "stationName": "Gwalior Junction",
+      "stationCode": "GWL"
+    },
+    {
+      "stationName": "Jhansi Junction",
+      "stationCode": "JHS"
+    },
+    {
+      "stationName": "Vasco Da Gama",
+      "stationCode": "VSG"
+    },
+    {
+      "stationName": "Kochi Harbour Terminus",
+      "stationCode": "CHTS"
+    },
+    {
+      "stationName": "Palakkad Junction",
+      "stationCode": "PGT"
+    },
+    {
+      "stationName": "Mysore Junction",
+      "stationCode": "MYS"
+    },
+    {
+      "stationName": "Bilaspur Junction",
+      "stationCode": "BSP"
+    },
+    {
+      "stationName": "Raipur Junction",
+      "stationCode": "R"
+    },
+    {
+      "stationName": "Katni Junction",
+      "stationCode": "KTE"
+    },
+    {
+      "stationName": "Itarsi Junction",
+      "stationCode": "ET"
+    },
+    {
+      "stationName": "Chandigarh Junction",
+      "stationCode": "CDG"
+    },
+    {
+      "stationName": "Panipat Junction",
+      "stationCode": "PNP"
+    },
+    {
+      "stationName": "Aligarh Junction",
+      "stationCode": "ALJN"
+    },
+    {
+      "stationName": "Moradabad Junction",
+      "stationCode": "MB"
+    },
+    {
+      "stationName": "Guntur Junction",
+      "stationCode": "GNT"
+    },
+    {
+      "stationName": "Vellore Cantonment",
+      "stationCode": "VLR"
+    },
+    {
+      "stationName": "Tirupati",
+      "stationCode": "TPTY"
+    },
+    {
+      "stationName": "Kanyakumari",
+      "stationCode": "CAPE"
+    },
+    {
+      "stationName": "Dibrugarh Town",
+      "stationCode": "DBRT"
+    },
+    {
+      "stationName": "Silchar",
+      "stationCode": "SCL"
+    },
+    {
+      "stationName": "Darjeeling",
+      "stationCode": "DJ"
+    },
+    {
+      "stationName": "Alipur Duar Junction",
+      "stationCode": "APDJ"
+    },
+    {
+      "stationName": "Dimapur",
+      "stationCode": "DMV"
+    },
+    {
+      "stationName": "Badarpur Junction",
+      "stationCode": "BPB"
+    },
+    {
+      "stationName": "Ajmer Junction",
+      "stationCode": "AII"
+    },
+    {
+      "stationName": "Ratlam Junction",
+      "stationCode": "RTM"
+    },
+    {
+      "stationName": "Surendranagar Junction",
+      "stationCode": "SUNR"
+    },
+    {
+      "stationName": "Vapi",
+      "stationCode": "VAPI"
+    },
+    {
+      "stationName": "Nashik Road",
+      "stationCode": "NK"
+    },
+    {
+      "stationName": "Vijayapura",
+      "stationCode": "BJP"
+    },
+    {
+      "stationName": "Bellary Junction",
+      "stationCode": "BAY"
+    },
+    {
+      "stationName": "Kakinada Town Junction",
+      "stationCode": "CCT"
+    },
+    {
+      "stationName": "Anakapalle",
+      "stationCode": "AKP"
+    },
+    {
+      "stationName": "Tuticorin",
+      "stationCode": "TN"
+    },
+    {
+      "stationName": "Nagercoil Junction",
+      "stationCode": "NCJ"
+    }
+  ]
+  

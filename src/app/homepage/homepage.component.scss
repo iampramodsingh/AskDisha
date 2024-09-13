@@ -1,0 +1,606 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.container-box {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    color: white;
+   
+}
+
+.gOJRFr {
+    background-color: rgb(3, 40, 66);
+    background-image: url(https://cdn.jsdelivr.net/gh/corover/assets@latest/askdisha-bucket/header-refactor.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgba(40, 92, 157, 0.61);
+    padding: 0.625rem 0.875rem;
+   
+}
+
+.btn-menu {
+    width: 1.25rem;
+    cursor: pointer;
+    margin-bottom: 0.625rem;
+}
+
+.btn-reset {
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.disha-logo {
+    width: 3.625rem;
+}
+
+.logo-container {
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    height: 3.125rem;
+    justify-content: center;
+    padding: 7px;
+    width: 3.125rem;
+}
+
+
+.first-column {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    align-items: center;
+}
+
+.header-text p , .header-text h3, .header-text span {
+    margin: 0;
+    margin-left: 0.5rem;
+    
+}
+
+.header-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.313rem;
+}
+
+.header-text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+}
+
+.header-text span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: block;
+    margin-left: 0.313rem;
+    line-height: 0.9;
+    color: rgb(255, 250, 113);
+}
+
+.greet{
+    color: rgb(8, 8, 8);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.askMsg {
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.greetParent {
+    // padding: 10px 15px;
+    margin: 10px 0px;
+}
+
+.greetParent h2 , .greetParent h4 {
+    margin: 0;
+}
+
+
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  ::ng-deep.card-1 .mat-mdc-form-field-subscript-wrapper { 
+    display: none !important;
+  }
+
+  ::ng-deep.card-1 .mdc-text-field {
+    padding: 0 40px;
+  }
+
+  .form-field {
+    position: relative;
+  }
+
+  .train {
+    position: absolute;
+    left: -10%;
+    top: 30%;
+    margin-right: 8px;
+    width: 24px;
+}
+
+.station {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.swap {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgb(235, 238, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}
+
+::ng-deep.mat-mdc-option .mdc-list-item__primary-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.m-r-10px {
+    margin-right: 10px;
+}
+
+.stationCode {
+    margin: 0px;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+    color: rgb(70, 68, 68);
+    font-weight: 700;
+    background-color: rgb(252, 221, 94);
+}
+
+.stationName {
+    margin: 0px;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+
+.optionWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+::ng-deep.journeyDate svg {
+    color: rgb(103, 58, 183);
+}
+
+.quotaIcon {
+    align-items: center;
+    background-color: #ebeefd;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 4px;
+    width: 40px;
+}
+
+.more-details {
+    display: flex;
+    gap: 1px;
+}
+
+.button {
+    padding: 10px;
+}
+
+.button button {
+    width: 100%;
+}
+
+.mat-mdc-unelevated-button:not(:disabled) {
+    background-color: rgb(52, 109, 179);
+}
+
+ ::ng-deep.quota .mat-mdc-text-field-wrapper{
+    padding: 0 40px 0 6px;
+ }
+
+ .binacular {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgb(235, 238, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.services {
+    margin-top: 18px;
+}
+
+.ticket {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(235, 238, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ .mat-expansion-panel-header {
+    padding: 0 10px;
+ }
+ .desc {
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(96, 125, 139);
+    font-weight: 400;
+    text-align: center;
+    margin: 15px 0px;
+    width: 100%;
+ }
+
+ .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    row-gap: 10px;
+}
+ 
+.icon-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-direction: column;
+    max-width: 70px;
+    min-width: 70px;
+    padding: 8px;
+}
+
+.icon-white p {
+    color: #232323;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.icon-white img {
+    width: 40px;
+}
+
+::ng-deep.service-expansion .mat-expansion-panel-body {
+    padding: 0 20px 16px;
+}
+
+::ng-deep.QA .mat-expansion-panel-header-title .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+::ng-deep.QA .mat-expansion-panel-body {
+    padding: 0;
+}
+
+.color-grey {
+    color: grey;
+}
+
+.img-wrap {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(235, 238, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.line-wrap {
+    margin: 0px 0px 0px 5px;
+    color: rgb(8, 8, 8);
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.line-wrap p {
+    margin: 0;
+}
+
+.advertise-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    margin: 15px 0;
+}
+
+.advertise-anchor {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.first-columns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.first-columns img {
+    width: 28px;
+    margin-right: 12px;
+}
+
+.first_para {
+    margin: 0px; 
+    font-size: 16px; 
+    color: rgb(241, 69, 38); 
+    font-weight: 600;
+}
+
+.second_para {
+    margin: 2px 0px 0px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 600;
+}
+
+.adver {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link_arrow {
+    border: 1px solid rgb(244, 70, 39);
+    color: rgb(244, 70, 39);
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+::ng-deep.about  .mat-expansion-panel-body p{
+    text-align: justify;
+    margin: 14px 5px 0px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+::ng-deep.about  .mat-expansion-panel-body h3 {
+    margin: 14px 0px 0px;
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    line-height: 150%;
+    margin-left: 7px;
+}
+
+::ng-deep.about  .mat-expansion-panel-body ul{
+    margin: 14px 0px 0px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 600;
+    line-height: 150%;
+    margin-left: 25px;
+}
+
+::ng-deep.about  .mat-expansion-panel-body ul li{
+    margin-bottom: 7px;
+}
+
+.chat {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 7px 7px 2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 5px 0px, rgba(0, 0, 0, 0.1) 1px 0px 0px 0px;
+    z-index: 2;
+    background-color: white;
+}
+
+.chatImg {
+    width: 44px;
+    margin-right: 8px;
+    height: 34px;
+    padding: 5px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgb(52, 109, 179);
+    cursor: pointer;
+}
+
+.chat input {
+    border: 1px solid rgb(218, 217, 217);
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    padding: 8px 10px;
+    width: 100%;
+}
+
+.mic-btn {
+    width: 28px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.send-btn {
+    width: 32px;
+}
+
+.mic-bttn {
+    width: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+
+
+
+
+$primary: #189BFF;
+$secondary: #d8d8d8;
+$size: 30px;
+
+
+
+.btn {
+	border: none;
+  padding: 0;
+  border-radius: 100%;
+  width: $size;
+  height: $size;
+  font-size: 3em;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+//   background: red;
+	position: relative;
+	z-index: 999;
+  display: inline-block;
+    line-height: $size;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pulse-ring {
+  content: '';
+  width: 36px;
+  height: 36px;
+	// background: $primary;
+  border: 5px solid $primary;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  animation: pulsate infinite 1.5s;
+}
+
+.pulse-ring.delay{
+	// animation-delay: 1s;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3, 1.3);
+    opacity: 0;
+  }
+}
+
+.container {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	height: 100vh;
+	background-color: $secondary;
+}
+
+.m-left{
+    margin: 0 8px;
+}
+
+
+.type2 .pulse-ring{
+	background: transparent;
+}
+
+
+::ng-deep.station .mat-mdc-form-field-icon-suffix {
+    display: flex;
+    align-items: center;
+}
