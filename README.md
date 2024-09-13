@@ -29,16 +29,42 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## The repository includes:
 
-Replicated and modernized homepage of https://askdisha.irctc.co.in (UI only).
-Working station selection and search functionality.
-Working text and voice input.
-Fully responsive UI.
+# AskDisha - Homepage UI Modernization
 
-##  Project Setup Instructions:  
-  Clone the repository:  https://github.com/iampramodsingh/AskDisha .
-  Navigate to the project directory .
-  Install dependencies: npm install (node 18 environment is required) .
-  Start the development server: ng serve .
-  Open the application in your browser:  http://localhost:4200 .
-  Click on AskDisha gif image on bottom right .
-  After clicking the image one dialog will open .
+This project replicates and modernizes the homepage of [AskDisha](https://askdisha.irctc.co.in) (UI only), with functional station selection, search, text input, and voice input. The UI is fully responsive.
+
+## Project Setup Instructions
+
+1. **Clone the repository**:  
+   ```bash
+   git clone https://github.com/iampramodsingh/AskDisha
+   ```
+
+2. **Navigate to the project directory**:  
+   ```bash
+   cd AskDisha
+   ```
+
+3. **Install dependencies**:  
+   ```bash
+   npm install
+   ```
+   (Ensure you're using **Node.js v18** environment)
+
+4. **Start the development server**:  
+   ```bash
+   ng serve
+   ```
+
+5. **Open the application in your browser**:  
+   ```
+   http://localhost:4200
+   ```
+
+6. **Interact with the UI**:
+   - Click on the **AskDisha** gif image located at the bottom right corner of the page.
+   - After clicking the image, a dialog will open where you can interact with the features.
+
+---
+
+Feel free to reach out if you encounter any issues during setup or if you have any questions.
