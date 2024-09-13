@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## The repository includes:
+
+Replicated and modernized homepage of https://askdisha.irctc.co.in (UI only).
+Working station selection and search functionality.
+Working text and voice input.
+Fully responsive UI.
+
+##  Project Setup Instructions:  
+  Clone the repository:  https://github.com/iampramodsingh/AskDisha  
+  Navigate to the project directory
+  Install dependencies: npm install (node 18 environment is required)  
+  Start the development server: ng serve
+  Open the application in your browser:  http://localhost:4200
+  Click on AskDisha gif image on bottom right
+  After clicking the image one dialog will open
